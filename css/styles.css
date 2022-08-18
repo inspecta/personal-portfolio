@@ -17,14 +17,10 @@ body {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background: url(/images/background.png);
-  background-repeat: no-repeat;
-  background-color: #f3fafc;
   align-items: center;
 }
 
 header {
-  color: #6070ff;
   width: 375px;
   height: 718px;
 }
@@ -32,7 +28,7 @@ header {
 .logo-placeholder {
   display: flex;
   flex-direction: row;
-  padding: 10px 12px;
+  padding: 30px 12px;
   width: 100px;
   height: 80px;
 }
@@ -42,13 +38,17 @@ header {
   font-size: 30px;
   text-align: center;
   padding: 20px 40px;
+  color: #6070ff;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 .nav-links {
   width: 30px;
   height: 30px;
   float: right;
-  overflow: hidden;
 }
 
 .menu-btn {
@@ -60,19 +60,23 @@ header {
   align-items: center;
   cursor: pointer;
   height: 70px;
+  font-size: 40px;
+  color: #6070ff;
 }
 
-main {
+.main {
   width: 327px;
   height: 604px;
-  top: 92px;
+  top: 20px;
   align-items: center;
   padding: 114px 24px;
   gap: 12px;
   position: absolute;
+  background: url(/images/background.png) center;
+  background-repeat: no-repeat;
 }
 
-main .title {
+.main .title {
   color: #25467e;
   align-items: center;
   font-size: 50px;
@@ -81,10 +85,10 @@ main .title {
   font-family: "Nunito", Verdana, sans-serif;
 }
 
-main .about-me {
+.main .about-me {
   color: #344563;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 28px;
   height: 146px;
 }
@@ -100,6 +104,11 @@ footer {
 .social-icons {
   font-size: 25px;
   cursor: pointer;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  width: 40%;
+  margin: 0 70px;
 }
 
 .social-icons a {

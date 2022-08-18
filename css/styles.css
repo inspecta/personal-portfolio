@@ -92,24 +92,19 @@ main .about-me {
   height: 146px;
 }
 
-h4 .title {
-  width: 200px;
-  height: 24px;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 24px;
+h4 {
   color: #7f8cff;
 }
 
-section {
-  display: flex;
-  padding-left: 40px;
-  width: 100%;
+footer {
+  align-items: center;
 }
 
-section a {
-  color: #505f79;
+.social-icons {
   font-size: 25px;
   cursor: pointer;
-  width: 10%;
+}
+
+.social-icons a {
+  color: #505f79;
 }

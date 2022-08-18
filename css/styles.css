@@ -66,10 +66,7 @@ main {
   width: 327px;
   height: 604px;
   top: 92px;
-  left: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 114px 24px;
   gap: 12px;
   position: absolute;

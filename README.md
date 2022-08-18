@@ -1,4 +1,4 @@
-# personal-portfolio
+# Personal-Portfolio
 
 My professional portfolio or website; a representation of both my technical skills and work experience that I have achieved over a period of time.
 
@@ -20,11 +20,11 @@ To get this project running on your local machine, follow any of these steps
 
 # Live Project Demo
 
-Checkout this link for a live demo of the portfolio.
+Checkout this link for a live demo of the portfolio. [Link]()
 
 # Github
 
-Gitub repository can be found here
+Gitub repository can be found [Here](https://github.com/inspecta/personal-portfolio)
 
 # Authors
 

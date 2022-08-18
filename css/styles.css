@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 * {
   box-sizing: border-box;
-  font-family: "Poppins";
+  font-family: "Poppins", Verdana, sans-serif;
 }
 
 body {
@@ -80,6 +81,7 @@ main .title {
   font-size: 50px;
   font-weight: 800;
   line-height: 52px;
+  font-family: "Nunito", Verdana, sans-serif;
 }
 
 main .about-me {

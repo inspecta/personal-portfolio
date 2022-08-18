@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
-@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 * {
   box-sizing: border-box;
+  font-family: "Poppins";
 }
 
 body {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
   position: absolute;
-  font-family: "Poppins";
 }
 
 .container {
@@ -20,6 +19,7 @@ body {
   background: url(/images/background.png);
   background-repeat: no-repeat;
   background-color: #f3fafc;
+  align-items: center;
 }
 
 header {
@@ -85,10 +85,9 @@ main .title {
 main .about-me {
   color: #344563;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
   height: 146px;
-  font-family: "Nunito";
 }
 
 .social-media-title {

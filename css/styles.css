@@ -1,116 +1,65 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins");
-@import url("https://fonts.googleapis.com/css?family=Nunito");
-
-html {
-  box-sizing: border-box;
+* {
   font-family: "Poppins", Verdana, sans-serif;
 }
 
-body {
-  padding: 0;
-  margin: 0 auto;
-  text-align: center;
-  position: absolute;
-}
-
 .container {
-  width: 100%;
-  overflow: hidden;
+  width: 286px;
+  height: 750px;
   position: relative;
-  align-items: center;
 }
 
 header {
-  width: 375px;
-  height: 718px;
-}
-
-.logo-placeholder {
   display: flex;
-  flex-direction: row;
-  padding: 30px 12px;
-  width: 100px;
-  height: 80px;
-}
-
-.logo {
-  font-weight: 700;
-  font-size: 30px;
-  text-align: center;
-  padding: 20px 40px;
-  color: #6070ff;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-.nav-links {
-  width: 30px;
-  height: 30px;
-  float: right;
-}
-
-.menu-btn {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  height: 70px;
-  font-size: 40px;
-  color: #6070ff;
+  padding: 40px 10px;
 }
 
 .main {
-  width: 327px;
-  height: 604px;
-  top: 20px;
-  align-items: center;
-  padding: 114px 24px;
-  gap: 12px;
-  position: absolute;
-  background: url(/images/background.png) center;
+  background: url(/images/background.png);
   background-repeat: no-repeat;
+  background-size: 286px 500px;
+  padding-top: 60px;
+  height: 450px;
 }
 
-.main .title {
-  color: #25467e;
-  align-items: center;
-  font-size: 50px;
+.logo {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: normal;
+  color: #6070ff;
+}
+
+.nav-links {
+  float: right;
+  margin-left: auto;
+}
+
+.title {
+  font-size: 25px;
   font-weight: 800;
-  line-height: 52px;
-  font-family: "Nunito", Verdana, sans-serif;
+  line-height: 35px;
+  color: #172b4d;
+  width: 50%;
 }
 
-.main .about-me {
+.about-me {
+  font-size: 13px;
+  font-style: normal;
+  line-height: 20px;
   color: #344563;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  height: 146px;
 }
 
-h4 {
+.social-title {
+  font-size: 16px;
+  font-style: normal;
   color: #7f8cff;
 }
 
-footer {
-  align-items: center;
-}
-
 .social-icons {
-  font-size: 25px;
-  cursor: pointer;
   display: flex;
   list-style: none;
-  justify-content: space-evenly;
-  width: 40%;
-  margin: 0 70px;
-}
-
-.social-icons a {
-  color: #505f79;
+  justify-content: space-between;
+  margin-right: auto;
+  padding: 0;
+  width: 160px;
 }

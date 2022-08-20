@@ -2,10 +2,17 @@
   font-family: "Poppins", Verdana, sans-serif;
 }
 
+body {
+  background: #e5e5e5;
+}
+
 .container {
-  width: 286px;
-  height: 750px;
+  width: 300px;
+  height: 610px;
   position: relative;
+  background: #fff;
+  border: 1px solid rgb(192, 181, 181);
+  border-radius: 10px;
 }
 
 header {
@@ -62,4 +69,228 @@ header {
   margin-right: auto;
   padding: 0;
   width: 160px;
+}
+
+.works {
+  display: grid;
+  grid-template-rows: 610px 680px 610px 680px;
+  gap: 80px;
+  border-radius: 15px;
+}
+
+.works > div {
+  text-align: center;
+  border: 1px solid rgb(192, 181, 181);
+  border-radius: 15px;
+  background: #fff;
+}
+
+.card {
+  width: 327px;
+}
+
+.card-header-pic {
+  padding: 0;
+}
+
+.card-title {
+  display: flex;
+  font-weight: 700;
+  font-size: 33px;
+  color: #172b4d;
+  padding: 0 10px;
+  line-height: 0;
+  font-family: "Poppins", Verdana, sans-serif;
+}
+
+.card-title-2 {
+  font-weight: 700;
+  font-size: 35px;
+  color: #172b4d;
+  padding: 0 10px;
+  font-family: "Poppins", Verdana, sans-serif;
+  text-align: left;
+  width: 200px;
+  margin: 0;
+}
+
+.card-job-desc {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin-right: auto;
+  padding: 0 10px;
+  width: 250px;
+  font-size: 14px;
+  font-family: "Poppins", Verdana, sans-serif;
+}
+
+.card-job-desc .card-company {
+  color: #344563;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card-job-desc .card-job {
+  color: #7a869a;
+  font-size: 13px;
+}
+
+.card-job-desc .card-year {
+  color: #7a869a;
+  font-size: 13px;
+}
+
+.card-persona {
+  height: 76px;
+  color: #344563;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 10px;
+  text-align: left;
+  font-family: "Poppins", Verdana, sans-serif;
+}
+
+.card-languages {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 200px;
+  margin-right: auto;
+  padding: 0 10px;
+  font-family: "Poppins", Verdana, sans-serif;
+}
+
+.card-lang1 {
+  width: 50px;
+  text-align: center;
+  background: #ebebff;
+  font-size: 12px;
+  color: #6070ff;
+  border-radius: 7px;
+  height: 23px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+.card-lang2 {
+  width: 40px;
+  text-align: center;
+  background: #ebebff;
+  font-size: 12px;
+  color: #6070ff;
+  border-radius: 7px;
+  height: 23px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+.card-lang3 {
+  width: 80px;
+  text-align: center;
+  background: #ebebff;
+  font-size: 12px;
+  color: #6070ff;
+  border-radius: 7px;
+  height: 23px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+.card-submit-button {
+  border: 1px solid #6070ff;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+  font-size: 16px;
+  color: #396df2;
+  background: transparent;
+  height: 50px;
+  width: 120px;
+  font-family: "Poppins", Verdana, sans-serif;
+  font-weight: 400;
+}
+
+.card-form {
+  display: flex;
+  padding: 0 10px;
+}
+
+.about-myself {
+  width: 327px;
+  height: 1000px;
+  border: 1px solid #fff;
+  border-top-right-radius: 50px;
+  padding: 0 10px;
+  background: #fff;
+  padding-top: 100px;
+}
+
+.about-myself-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #172b4d;
+  width: 10px;
+}
+
+.about-me-resume {
+  line-height: 24px;
+  color: #344563;
+  font-size: 17px;
+  font-style: normal;
+  text-align: left;
+}
+
+.connect {
+  font-size: 16px;
+  font-weight: 500;
+  color: #7f8cff;
+}
+
+.social-media {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  width: 220px;
+}
+
+.social-media li {
+  flex: 1;
+  margin-right: auto;
+}
+
+.get-resume {
+  width: 135px;
+  height: 30px;
+  padding: 5px;
+  font-size: 17px;
+  border: 1px solid #7f8cff;
+  border-radius: 10px;
+  color: #396df2;
+  font-weight: 500;
+}
+
+.my-resume {
+  list-style: none;
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-title {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.border {
+  border-bottom: 1px solid #dfe1e6;
+  padding-bottom: 20px;
+}
+
+.my-resume ul {
+  list-style: none;
+  padding: 10px;
 }

@@ -3,26 +3,33 @@
 }
 
 .container {
-  width: 286px;
-  height: 750px;
-  position: relative;
+  width: 375px;
+  height: auto;
+  background: #f7f3f3;
 }
 
 header {
   display: flex;
-  padding: 40px 10px;
+  padding: 40px 20px;
+}
+
+.home {
+  height: auto;
+  width: 375px;
+  margin-bottom: 7em;
+  border: 1px solid #e9e9eb;
+  border-radius: 20px;
+  background: #fff;
 }
 
 .main {
-  background: url(/images/background.png);
-  background-repeat: no-repeat;
-  background-size: 286px 500px;
-  padding-top: 60px;
-  height: 450px;
+  background: url(/images/background.png) no-repeat center;
+  background-size: 100% 100%;
+  height: 550px;
 }
 
 .logo {
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
   font-weight: 700;
   font-style: normal;
@@ -35,31 +42,297 @@ header {
 }
 
 .title {
-  font-size: 25px;
+  font-size: 40px;
   font-weight: 800;
-  line-height: 35px;
+  line-height: 50px;
   color: #172b4d;
-  width: 50%;
+  width: 80%;
+  margin: 0.3em;
+  padding-top: 2em;
 }
 
 .about-me {
-  font-size: 13px;
+  font-size: 16px;
   font-style: normal;
-  line-height: 20px;
+  line-height: 24px;
   color: #344563;
+  margin: 1em;
+  width: 85%;
 }
 
 .social-title {
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   color: #7f8cff;
+  margin: 0.6em;
+  line-height: 24px;
 }
 
 .social-icons {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  margin-right: auto;
+  margin: 0.6em;
   padding: 0;
-  width: 160px;
+  width: 50%;
+  margin-bottom: 5em;
+}
+
+.works {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  gap: 80px;
+  border-radius: 15px;
+}
+
+.works > div {
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  background: #fff;
+  margin: 1.2em;
+}
+
+.card {
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.card-bg {
+  background-size: 100%;
+  flex-basis: 12em;
+  width: 90%;
+  border-radius: 6px;
+}
+
+.card1 {
+  background: url(/images/snapshot1.png) no-repeat center center;
+}
+
+.card2 {
+  background: url(/images/snapshot2.png) no-repeat center center;
+}
+
+.card3 {
+  background: url(/images/snapshot3.png) no-repeat center center;
+}
+
+.card4 {
+  background: url(/images/snapshot4.png) no-repeat center center;
+}
+
+.card-projects {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0 0.4em;
+}
+
+.card-header-pic {
+  padding: 0;
+}
+
+.card-title {
+  display: flex;
+  font-weight: 700;
+  font-size: 33px;
+  color: #172b4d;
+  padding: 0 10px;
+  line-height: 0;
+  font-family: "Poppins", Verdana, sans-serif;
+}
+
+.card-title-2 {
+  font-weight: 700;
+  font-size: 35px;
+  color: #172b4d;
+  padding: 0 10px;
+  font-family: "Poppins", Verdana, sans-serif;
+  text-align: left;
+  width: 200px;
+  margin: 0;
+}
+
+.card-job-desc {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin-right: auto;
+  padding: 0 10px;
+  width: 250px;
+  font-size: 14px;
+  font-family: "Poppins", Verdana, sans-serif;
+}
+
+.card-job-desc .card-company {
+  color: #344563;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.card-job-desc .card-job {
+  color: #7a869a;
+  font-size: 15px;
+}
+
+.card-job-desc .card-year {
+  color: #7a869a;
+  font-size: 15px;
+}
+
+.card-persona {
+  height: 76px;
+  color: #344563;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 10px;
+  text-align: left;
+  font-family: "Poppins", Verdana, sans-serif;
+}
+
+.card-languages {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 200px;
+  margin-right: auto;
+  padding: 0 10px;
+  font-family: "Poppins", Verdana, sans-serif;
+}
+
+.card-lang1 {
+  width: 50px;
+  text-align: center;
+  background: #ebebff;
+  font-size: 12px;
+  color: #6070ff;
+  border-radius: 7px;
+  height: 23px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+.card-lang2 {
+  width: 40px;
+  text-align: center;
+  background: #ebebff;
+  font-size: 12px;
+  color: #6070ff;
+  border-radius: 7px;
+  height: 23px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+.card-lang3 {
+  width: 93px;
+  text-align: center;
+  background: #ebebff;
+  font-size: 12px;
+  color: #6070ff;
+  border-radius: 7px;
+  height: 23px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+.card-submit-button {
+  border: 1px solid #6070ff;
+  padding: 0 10px;
+  border-radius: 10px;
+  align-items: center;
+  font-size: 16px;
+  color: #396df2;
+  background: transparent;
+  height: 50px;
+  width: 120px;
+  font-family: "Poppins", Verdana, sans-serif;
+  font-weight: 400;
+  display: flex;
+  margin: 0.5em;
+}
+
+.about-myself {
+  width: 327px;
+  height: auto;
+  border: 1px solid #fff;
+  border-top-right-radius: 50px;
+  padding: 0 10px;
+  background: #fff;
+  padding-top: 100px;
+  margin-bottom: 5em;
+}
+
+.about-myself-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #172b4d;
+  width: 10px;
+}
+
+.about-me-resume {
+  line-height: 24px;
+  color: #344563;
+  font-size: 17px;
+  font-style: normal;
+  text-align: left;
+}
+
+.connect {
+  font-size: 16px;
+  font-weight: 500;
+  color: #7f8cff;
+}
+
+.social-media {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  width: 220px;
+}
+
+.social-media li {
+  flex: 1;
+  margin-right: auto;
+}
+
+.get-resume {
+  width: 166px;
+  height: 50px;
+  padding: 5px;
+  font-size: 17px;
+  border: 1px solid #7f8cff;
+  border-radius: 10px;
+  color: #396df2;
+  font-weight: 500;
+  background: transparent;
+  margin-bottom: 2em;
+}
+
+.my-resume {
+  list-style: none;
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0 0.5em;
+  padding: 0;
+}
+
+.resume-title {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.border {
+  border-bottom: 1px solid #dfe1e6;
+  padding-bottom: 20px;
+}
+
+.my-resume ul {
+  list-style: none;
+  padding: 10px;
 }

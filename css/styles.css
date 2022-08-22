@@ -255,6 +255,10 @@ header {
   margin: 0.5em;
 }
 
+.languages-2{
+  list-style: none;
+}
+
 .about-myself {
   width: 327px;
   height: auto;

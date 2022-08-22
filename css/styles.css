@@ -231,6 +231,8 @@ header {
   list-style: none;
   width: 200px;
   margin-bottom: 3rem;
+  padding-left: 0;
+  margin-left: 10px;
 }
 
 .card-language1,
@@ -242,8 +244,7 @@ header {
 .card-language2 {
   margin-right: 1rem;
   margin-left: 1rem;
-} 
-
+}
 
 .card-submit-button {
   border: 1px solid #6070ff;

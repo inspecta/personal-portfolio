@@ -193,7 +193,7 @@ header {
   font-family: "Poppins", Verdana, sans-serif;
 }
 
-.card-languages {
+/* .card-languages {
   display: flex;
   list-style: none;
   justify-content: space-between;
@@ -225,18 +225,25 @@ header {
   height: 23px;
   font-weight: 400;
   padding-top: 5px;
+} */
+
+.card-language {
+  float: left ;
+  list-style: none;
+
 }
 
-.card-lang3 {
-  width: 93px;
-  text-align: center;
-  background: #ebebff;
-  font-size: 12px;
-  color: #6070ff;
-  border-radius: 7px;
-  height: 23px;
-  font-weight: 400;
-  padding-top: 5px;
+.card-language1 {
+  float: left;
+}
+
+.card-language2 {
+  float: right;
+
+}
+
+.card-language3 {
+  
 }
 
 .card-submit-button {

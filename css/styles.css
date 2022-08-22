@@ -257,7 +257,16 @@ header {
 
 .languages-2{
   list-style: none;
+  padding: 0;
+  margin-left: 10px;
+
 }
+.langauges2-1,
+.langauges2-2,
+.langauges2-3{
+  float: left;
+}
+
 
 .about-myself {
   width: 327px;

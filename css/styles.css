@@ -251,7 +251,6 @@ header {
   width: 120px;
   font-family: "Poppins", Verdana, sans-serif;
   font-weight: 400;
-  display: flex;
   margin: 0.5em;
 }
 
@@ -259,12 +258,19 @@ header {
   list-style: none;
   padding: 0;
   margin-left: 10px;
-
+  
 }
 .langauges2-1,
 .langauges2-2,
 .langauges2-3{
   float: left;
+  background-color: #dfe1e6;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+}
+
+.langauges2-2 {
+  margin: 0 1rem;
 }
 
 

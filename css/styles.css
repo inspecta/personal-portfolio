@@ -230,21 +230,20 @@ header {
 .card-language {
   list-style: none;
   width: 200px;
+  margin-bottom: 3rem;
 }
 
-.card-language1 {
+.card-language1,
+.card-language2,
+.card-language3 {
   float: left;
-  width: 30px;
 }
 
 .card-language2 {
-  width: 30px;
-}
+  margin-right: 1rem;
+  margin-left: 1rem;
+} 
 
-.card-language3 {
-  float: right;
-  width: 30px;
-}
 
 .card-submit-button {
   border: 1px solid #6070ff;

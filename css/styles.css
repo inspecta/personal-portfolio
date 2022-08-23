@@ -23,7 +23,7 @@ header {
 }
 
 .main {
-  background: url(/images/background.png) no-repeat center;
+  background: url(../images/background.png) no-repeat center;
   background-size: 100% 100%;
   height: 550px;
 }
@@ -110,19 +110,19 @@ header {
 }
 
 .card1 {
-  background: url(/images/snapshot1.png) no-repeat center center;
+  background: url(../images/snapshot1.png) no-repeat center center;
 }
 
 .card2 {
-  background: url(/images/snapshot2.png) no-repeat center center;
+  background: url(../images/snapshot2.png) no-repeat center center;
 }
 
 .card3 {
-  background: url(/images/snapshot3.png) no-repeat center center;
+  background: url(../images/snapshot3.png) no-repeat center center;
 }
 
 .card4 {
-  background: url(/images/snapshot4.png) no-repeat center center;
+  background: url(../images/snapshot4.png) no-repeat center center;
 }
 
 .card-projects {
@@ -335,4 +335,40 @@ header {
 .my-resume ul {
   list-style: none;
   padding: 10px;
+}
+
+.contact {
+  background: #6070ff;
+  border-top-left-radius: 80px;
+  padding: 3rem 2rem;
+  text-align: center;
+  background-image: url("/personal-portfolio/images/background-contact.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.title-contact {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.contact-info {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+textarea,
+button {
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 1rem;
 }

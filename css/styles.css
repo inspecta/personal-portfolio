@@ -372,3 +372,8 @@ button {
   border: none;
   margin-bottom: 1rem;
 }
+
+.contact-button {
+  width: 150px;
+  color: #6070ff
+}

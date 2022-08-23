@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="container">
-      <!-- <section class="home">
+      <section class="home">
         <header>
           <div class="logo-placeholder">
             <a href="#" class="logo">My Logo</a>
@@ -157,7 +157,8 @@
           </section>
         </div>
         <section class="about-myself">
-          <h3 class="about-myself-title">About Myself</h3>
+          <div class="about-container">
+            <h3 class="about-myself-title">About Myself</h3>
           <p class="about-me-resume">
             I’m a software developer! I can help you build a product , feature
             or website Look through some of my work and experience! If you like
@@ -201,8 +202,9 @@
               Skills <img src="./images/arrow-forward.png" alt="" />
             </li>
           </ul>
+          </div>
         </section>
-      </section> -->
+      </section>
 
       <section class="contact">
         <h1 class="title-contact">Contact me</h1>
@@ -215,7 +217,7 @@
           <input
             type="text"
             name="name"
-            id=""
+            id="name"
             maxlength="30"
             minlength="5"
             placeholder="Please enter your name"
@@ -223,12 +225,12 @@
           <input
             type="email"
             name="email"
-            id=""
+            id="email"
             placeholder="Please enter your email."
           />
           <textarea
             name="message"
-            id=""
+            id="message"
             cols="30"
             rows="7"
             placeholder="Write your message here"

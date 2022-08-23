@@ -23,7 +23,7 @@ header {
 }
 
 .main {
-  background: url(/images/background.png) no-repeat center;
+  background: url(../images/background.png) no-repeat center;
   background-size: 100% 100%;
   height: 550px;
 }
@@ -110,19 +110,19 @@ header {
 }
 
 .card1 {
-  background: url(/images/snapshot1.png) no-repeat center center;
+  background: url(../images/snapshot1.png) no-repeat center center;
 }
 
 .card2 {
-  background: url(/images/snapshot2.png) no-repeat center center;
+  background: url(../images/snapshot2.png) no-repeat center center;
 }
 
 .card3 {
-  background: url(/images/snapshot3.png) no-repeat center center;
+  background: url(../images/snapshot3.png) no-repeat center center;
 }
 
 .card4 {
-  background: url(/images/snapshot4.png) no-repeat center center;
+  background: url(../images/snapshot4.png) no-repeat center center;
 }
 
 .card-projects {
@@ -256,14 +256,19 @@ header {
 }
 
 .about-myself {
-  width: 327px;
+  width: 375px;
   height: auto;
   border: 1px solid #fff;
-  border-top-right-radius: 50px;
-  padding: 0 10px;
+  border-top-right-radius: 80px;
+
+  /* padding: 0 10px; */
   background: #fff;
   padding-top: 100px;
   margin-bottom: 5em;
+}
+
+.about-container {
+  padding: 0 15px;
 }
 
 .about-myself-title {
@@ -274,6 +279,7 @@ header {
 }
 
 .about-me-resume {
+  width: 90%;
   line-height: 24px;
   color: #344563;
   font-size: 17px;
@@ -335,4 +341,58 @@ header {
 .my-resume ul {
   list-style: none;
   padding: 10px;
+}
+
+.contact {
+  width: 80%;
+  background: #6070ff;
+  border-top-left-radius: 80px;
+  padding: 3rem 2rem;
+  text-align: center;
+  background-image: url("/images/background-contact.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+}
+
+.title-contact {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.contact-info {
+  color: #fff;
+  font-size: 19px;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+textarea,
+button {
+  padding: 0.5em;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #cfd8dc;
+}
+
+.contact-form input,
+button {
+  height: 38px;
+}
+
+.contact-form input:focus,
+textarea:focus {
+  outline: none !important;
+  border: 1px solid #6070ff;
+}
+
+.contact-button {
+  width: 150px;
+  color: #6070ff;
 }

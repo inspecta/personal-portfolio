@@ -344,6 +344,7 @@ header {
 }
 
 .contact {
+  width: 80%;
   background: #6070ff;
   border-top-left-radius: 80px;
   padding: 3rem 2rem;
@@ -351,6 +352,7 @@ header {
   background-image: url("/images/background-contact.png");
   background-position: right;
   background-repeat: no-repeat;
+  padding-top: 100px;
 }
 
 .title-contact {
@@ -361,7 +363,7 @@ header {
 
 .contact-info {
   color: #fff;
-  font-size: 20px;
+  font-size: 19px;
   margin-bottom: 2rem;
 }
 
@@ -374,9 +376,21 @@ header {
 textarea,
 button {
   padding: 0.5em;
-  border-radius: 5px;
+  border-radius: 8px;
   border: none;
   margin-bottom: 1rem;
+  border: 1px solid #cfd8dc;
+}
+
+.contact-form input,
+button {
+  height: 38px;
+}
+
+.contact-form input:focus,
+textarea:focus {
+  outline: none !important;
+  border: 1px solid #6070ff;
 }
 
 .contact-button {

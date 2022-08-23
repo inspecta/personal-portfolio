@@ -159,49 +159,51 @@
         <section class="about-myself">
           <div class="about-container">
             <h3 class="about-myself-title">About Myself</h3>
-          <p class="about-me-resume">
-            I’m a software developer! I can help you build a product , feature
-            or website Look through some of my work and experience! If you like
-            what you see and have a project you need coded, don’t hesitate to
-            contact me.
-          </p>
-          <h4 class="connect">LET'S CONNECT</h4>
-          <ul class="social-media">
-            <li>
-              <a href="#"><img src="./images/github.svg" alt="Github" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="./images/linkedln.svg" alt="Linkedln" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="./images/fingers.svg" alt="" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="./images/twitter.svg" alt="Twitter" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="./images/gmail.svg" alt="Gmail" /></a>
-            </li>
-          </ul>
-          <button type="button" class="get-resume">Get my resume</button>
-          <ul class="my-resume">
-            <li class="resume-title">
-              Languages <img src="./images/arrow-down.png" alt="" />
-            </li>
-            <li>
-              <ul>
-                <li><img src="./images/javascript.png" alt="" /></li>
-                <li><img src="./images/html.png" alt="" /></li>
-                <li><img src="./images/css.png" alt="" /></li>
-              </ul>
-            </li>
-            <li class="resume-title border">
-              Frameworks <img src="./images/arrow-forward.png" alt="" />
-            </li>
-            <li class="resume-title border">
-              Skills <img src="./images/arrow-forward.png" alt="" />
-            </li>
-          </ul>
+            <p class="about-me-resume">
+              I’m a software developer! I can help you build a product , feature
+              or website Look through some of my work and experience! If you
+              like what you see and have a project you need coded, don’t
+              hesitate to contact me.
+            </p>
+            <h4 class="connect">LET'S CONNECT</h4>
+            <ul class="social-media">
+              <li>
+                <a href="#"><img src="./images/github.svg" alt="Github" /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./images/linkedln.svg" alt="Linkedln"
+                /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./images/fingers.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./images/twitter.svg" alt="Twitter" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./images/gmail.svg" alt="Gmail" /></a>
+              </li>
+            </ul>
+            <button type="button" class="get-resume">Get my resume</button>
+            <ul class="my-resume">
+              <li class="resume-title">
+                Languages <img src="./images/arrow-down.png" alt="" />
+              </li>
+              <li>
+                <ul>
+                  <li><img src="./images/javascript.png" alt="" /></li>
+                  <li><img src="./images/html.png" alt="" /></li>
+                  <li><img src="./images/css.png" alt="" /></li>
+                </ul>
+              </li>
+              <li class="resume-title border">
+                Frameworks <img src="./images/arrow-forward.png" alt="" />
+              </li>
+              <li class="resume-title border">
+                Skills <img src="./images/arrow-forward.png" alt="" />
+              </li>
+            </ul>
           </div>
         </section>
       </section>
@@ -213,24 +215,31 @@
           that you need built or a project that needs coding. I’d love to help
           with it
         </p>
-        <form action="https://formspree.io/f/mdojkaer" method="POST" class="contact-form">
+        <form
+          action="https://formspree.io/f/mdojkaer"
+          method="POST"
+          class="contact-form"
+        >
           <input
             type="text"
             name="name"
             id="name"
             maxlength="30"
             minlength="5"
+            required
             placeholder="Please enter your name"
           />
           <input
             type="email"
             name="email"
             id="email"
+            required
             placeholder="Please enter your email."
           />
           <textarea
             name="message"
             id="message"
+            required
             cols="30"
             rows="7"
             placeholder="Write your message here"

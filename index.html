@@ -19,13 +19,22 @@
             <a href="#" class="logo">My Logo</a>
           </div>
           <nav class="nav-links">
-            <div class="menu-btn">
-              <img src="./images/menu.png" alt="Menu button" />
-            </div>
+            <ul class="menu-bar">
+              <li>
+                <img
+                  src="./images/menu.png"
+                  alt="Menu button"
+                  class="menu-button"
+                />
+              </li>
+              <li class="menu-item"><a href="">Portfolio</a></li>
+              <li class="menu-item"><a href="">About</a></li>
+              <li class="menu-item"><a href="">Contact</a></li>
+            </ul>
           </nav>
         </header>
         <div class="main">
-          <h1 class="title">I'm Derrick Glad to see you!</h1>
+          <h1 class="title">I'm Derrick <br />Glad to see you!</h1>
           <p class="about-me">
             I’m a software developer! I can help you build a product , feature
             or website Look through some of my work and experience! If you like
@@ -76,14 +85,14 @@
               <li class="card-lang2">css</li>
               <li class="card-lang3">javascript</li>
             </ul>
-            <button type="button" class="card-submit-button">
+            <button type="button" onclick="" class="card-submit-button">
               See Project
             </button>
           </div>
         </div>
         <div class="card">
           <div class="card-bg card2"></div>
-          <section class="card-projects">
+          <section class="card-projects mobile">
             <h3 class="card-title-2">Multi-Post Stories</h3>
             <ul class="card-job-desc">
               <li class="card-company">CANOPY</li>
@@ -96,19 +105,44 @@
               A daily selection of privately personalized reads; no accounts or
               sign-ups required.
             </p>
-            <ul class="card-languages">
+            <ul class="card-languages more-languages">
               <li class="card-lang1">html</li>
+              <li class="card-lang4">Ruby on rails</li>
               <li class="card-lang2">css</li>
               <li class="card-lang3">javascript</li>
             </ul>
-            <button type="button" class="card-submit-button">
+            <button type="button" onclick="" class="card-submit-button">
+              See Project
+            </button>
+          </section>
+          <section class="card-projects desktop">
+            <h3 class="card-title-2">Multi-Post Stories</h3>
+            <ul class="card-job-desc">
+              <li class="card-company">FACEBOOK</li>
+              <li><img src="./images/Counter.png" alt="Counter" /></li>
+              <li class="card-job">Full Stack Dev</li>
+              <li><img src="./images/Counter.png" alt="Counter" /></li>
+              <li class="card-year">2015</li>
+            </ul>
+            <p class="card-persona">
+              Experimental content creation feature that allows users to add to
+              an existing story over the course of a day without spamming their
+              friends.
+            </p>
+            <ul class="card-languages more-languages">
+              <li class="card-lang1">html</li>
+              <li class="card-lang4">Ruby on rails</li>
+              <li class="card-lang2">css</li>
+              <li class="card-lang3">javascript</li>
+            </ul>
+            <button type="button" onclick="" class="card-submit-button">
               See Project
             </button>
           </section>
         </div>
         <div class="card">
           <div class="card-bg card3"></div>
-          <section class="card-projects">
+          <section class="card-projects mobile">
             <h3 class="card-title">Tonic</h3>
             <ul class="card-job-desc">
               <li class="card-company">CANOPY</li>
@@ -126,14 +160,38 @@
               <li class="card-lang2">css</li>
               <li class="card-lang3">javascript</li>
             </ul>
-            <button type="button" class="card-submit-button">
+            <button type="button" onclick="" class="card-submit-button">
+              See Project
+            </button>
+          </section>
+          <section class="card-projects desktop">
+            <h3 class="card-title-2">Facebook 360</h3>
+            <ul class="card-job-desc">
+              <li class="card-company">FACEBOOK</li>
+              <li><img src="./images/Counter.png" alt="Counter" /></li>
+              <li class="card-job">Full Stack Dev</li>
+              <li><img src="./images/Counter.png" alt="Counter" /></li>
+              <li class="card-year">2015</li>
+            </ul>
+            <p class="card-persona">
+              Exploring the future of media in Facebook's first Virtual Reality
+              app; a place to discover and enjoy 360 photos and videos on Gear
+              VR.
+            </p>
+            <ul class="card-languages more-languages">
+              <li class="card-lang1">html</li>
+              <li class="card-lang4">Ruby on rails</li>
+              <li class="card-lang2">css</li>
+              <li class="card-lang3">javascript</li>
+            </ul>
+            <button type="button" onclick="" class="card-submit-button">
               See Project
             </button>
           </section>
         </div>
         <div class="card">
           <div class="card-bg card4"></div>
-          <section class="card-projects">
+          <section class="card-projects mobile">
             <h3 class="card-title-2">Multi-Post Stories</h3>
             <ul class="card-job-desc">
               <li class="card-company">CANOPY</li>
@@ -146,108 +204,171 @@
               A daily selection of privately personalized reads; no accounts or
               sign-ups required.
             </p>
-            <ul class="card-languages">
+            <ul class="card-languages more-languages">
               <li class="card-lang1">html</li>
               <li class="card-lang2">css</li>
               <li class="card-lang3">javascript</li>
             </ul>
-            <button type="button" class="card-submit-button">
+            <button type="button" onclick="" class="card-submit-button">
+              See Project
+            </button>
+          </section>
+          <section class="card-projects desktop">
+            <h3 class="card-title-2">Uber Navigation</h3>
+            <ul class="card-job-desc">
+              <li class="card-company">Uber</li>
+              <li><img src="./images/Counter.png" alt="Counter" /></li>
+              <li class="card-job">Lead Developer</li>
+              <li><img src="./images/Counter.png" alt="Counter" /></li>
+              <li class="card-year">2018</li>
+            </ul>
+            <p class="card-persona">
+              A smart assistant to make driving more safe, efficient, and fun by
+              unlocking your most expensive computer: your car
+            </p>
+            <ul class="card-languages more-languages">
+              <li class="card-lang1">html</li>
+              <li class="card-lang4">Ruby on rails</li>
+              <li class="card-lang2">css</li>
+              <li class="card-lang3">javascript</li>
+            </ul>
+            <button type="button" onclick="" class="card-submit-button">
               See Project
             </button>
           </section>
         </div>
+      </section>
+      <div class="about-contact">
         <section class="about-myself">
           <div class="about-container">
-            <h3 class="about-myself-title">About Myself</h3>
-            <p class="about-me-resume">
-              I’m a software developer! I can help you build a product , feature
-              or website Look through some of my work and experience! If you
-              like what you see and have a project you need coded, don’t
-              hesitate to contact me.
-            </p>
-            <h4 class="connect">LET'S CONNECT</h4>
-            <ul class="social-media">
-              <li>
-                <a href="#"><img src="./images/github.svg" alt="Github" /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img src="./images/linkedln.svg" alt="Linkedln"
-                /></a>
-              </li>
-              <li>
-                <a href="#"><img src="./images/fingers.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#"><img src="./images/twitter.svg" alt="Twitter" /></a>
-              </li>
-              <li>
-                <a href="#"><img src="./images/gmail.svg" alt="Gmail" /></a>
-              </li>
-            </ul>
-            <button type="button" class="get-resume">Get my resume</button>
+            <div class="one">
+              <h3 class="about-myself-title">About Myself</h3>
+              <p class="about-me-resume">
+                I’m a software developer! I can help you build a product ,
+                feature or website Look through some of my work and experience!
+                If you like what you see and have a project you need coded,
+                don’t hesitate to contact me.
+              </p>
+              <h4 class="connect">LET'S CONNECT</h4>
+              <ul class="social-media">
+                <li>
+                  <a href="#"><img src="./images/github.svg" alt="Github" /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./images/linkedln.svg" alt="Linkedln"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./images/fingers.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./images/twitter.svg" alt="Twitter"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./images/gmail.svg" alt="Gmail" /></a>
+                </li>
+              </ul>
+              <button type="button" onclick="" class="get-resume">
+                Get my resume
+              </button>
+            </div>
             <ul class="my-resume">
               <li class="resume-title">
-                Languages <img src="./images/arrow-down.png" alt="" />
+                Languages
+                <img
+                  src="./images/arrow-down.png"
+                  alt="Arrow forward"
+                  class="arrow"
+                />
               </li>
               <li>
-                <ul>
-                  <li><img src="./images/javascript.png" alt="" /></li>
-                  <li><img src="./images/html.png" alt="" /></li>
-                  <li><img src="./images/css.png" alt="" /></li>
+                <ul class="prog-lang">
+                  <li>
+                    <img
+                      src="./images/js.png"
+                      alt="JavaScript"
+                      class="javascript"
+                    />
+                    JavaScript
+                  </li>
+                  <li>
+                    <img
+                      src="./images/html-icon.png"
+                      alt="HTML"
+                      class="html"
+                    />HTML
+                  </li>
+                  <li>
+                    <img src="./images/css-icon.png" alt="CSS" class="css" />CSS
+                  </li>
                 </ul>
               </li>
               <li class="resume-title border">
-                Frameworks <img src="./images/arrow-forward.png" alt="" />
+                Frameworks
+                <img
+                  src="./images/arrow-forward.png"
+                  alt="Arrow forward"
+                  class="arrow"
+                />
               </li>
               <li class="resume-title border">
-                Skills <img src="./images/arrow-forward.png" alt="" />
+                Skills
+                <img
+                  src="./images/arrow-forward.png"
+                  alt="Arrow forward"
+                  class="arrow"
+                />
               </li>
             </ul>
           </div>
         </section>
-      </section>
 
-      <section class="contact">
-        <h1 class="title-contact">Contact me</h1>
-        <p class="contact-info">
-          If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. I’d love to help
-          with it
-        </p>
-        <form
-          action="https://formspree.io/f/mdojkaer"
-          method="POST"
-          class="contact-form"
-        >
-          <input
-            type="text"
-            name="name"
-            id="name"
-            maxlength="30"
-            minlength="5"
-            required
-            placeholder="Please enter your name"
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            required
-            placeholder="Please enter your email."
-          />
-          <textarea
-            name="message"
-            id="message"
-            required
-            cols="30"
-            rows="7"
-            placeholder="Write your message here"
-            maxlength="500"
-          ></textarea>
-          <button class="contact-button" type="submit">Get in Touch</button>
-        </form>
-      </section>
+        <section class="contact">
+          <h1 class="title-contact">Contact me</h1>
+          <p class="contact-info">
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it
+          </p>
+          <form
+            action="https://formspree.io/f/mdojkaer"
+            method="POST"
+            class="contact-form"
+          >
+            <input
+              type="text"
+              name="name"
+              id="name"
+              maxlength="30"
+              minlength="5"
+              required
+              placeholder="Please enter your name"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Please enter your email."
+            />
+            <textarea
+              name="message"
+              id="message"
+              required
+              cols="30"
+              rows="7"
+              placeholder="Write your message here"
+              maxlength="500"
+            ></textarea>
+            <button class="contact-button" onclick="" type="submit">
+              Get in Touch
+            </button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>

@@ -8,6 +8,10 @@
   background: #f7f3f3;
 }
 
+body {
+  margin: 0;
+}
+
 header {
   display: flex;
   padding: 40px 20px;
@@ -43,11 +47,10 @@ header {
     transform: rotate(360deg);
   }
 }
-  
 
 .logo-placeholder {
   padding-top: 12px;
-  animation-name: animation ; 
+  animation-name: animation;
   animation-duration: 2s;
 }
 
@@ -233,7 +236,7 @@ header {
   margin-right: auto;
   padding: 0 10px;
   font-family: "Poppins", Verdana, sans-serif;
-} 
+}
 
 .card-lang1 {
   width: 50px;
@@ -539,7 +542,7 @@ button:hover {
 
   .menu-bar .menu-item::after {
     content: " ";
-    height: 2px;
+    height: 4px;
     width: 0;
     display: block;
     background-color: #396df2;
@@ -547,26 +550,7 @@ button:hover {
   }
 
   .menu-bar .menu-item:hover::after {
-    width: 50px;
-  }
-
-  .social-title {
-    font-weight: 500;
-    font-style: normal;
-    font-size: 16px;
-    width: 70%;
-  }
-
-  .social-icons {
-    width: 70%;
-  }
-
-  .social-icons img {
-    transition: all 0.3s;
-  }
-
-  .social-icons img:hover {
-    transform: scale(1.3);
+    width: 60px;
   }
 
   .works,
@@ -615,15 +599,6 @@ button:hover {
     transition: all 0.3s;
   }
 
-  .card-lang1:hover,
-  .card-lang2:hover,
-  .card-lang3:hover,
-  .card-lang4:hover {
-    background-color: #cfd8dc;
-    color: #396df2;
-    cursor: pointer;
-  }
-
   .card-lang4 {
     display: block;
     width: 90px;
@@ -635,6 +610,15 @@ button:hover {
     height: 23px;
     font-weight: 400;
     padding-top: 5px;
+  }
+
+  .card-lang1:hover,
+  .card-lang2:hover,
+  .card-lang3:hover,
+  .card-lang4:hover {
+    background-color: #cfd8dc;
+    color: #396df2;
+    cursor: pointer;
   }
 
   .card-submit-button {
@@ -803,14 +787,44 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    transition: all 0.2s;
   }
 
   .prog-lang img {
     margin-bottom: 0.5em;
+    transition: all 0.2s;
+  }
+
+  .prog-lang img:hover {
+    transform: scale(1.2);
+  }
+
+  .prog-lang li:hover {
+    color: rgb(94, 179, 248);
+    background-color: rgb(231, 231, 231);
   }
 
   .arrow {
     width: 20px;
     height: 20px;
+  }
+
+  .social-title {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    width: 70%;
+  }
+
+  .social-icons {
+    width: 70%;
+  }
+
+  .social-icons img {
+    transition: all 0.3s;
+  }
+
+  .social-icons img:hover {
+    transform: scale(1.3);
   }
 }

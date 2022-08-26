@@ -523,6 +523,20 @@ button:hover {
 
   .menu-bar .menu-item {
     display: block;
+    transition: all 0.3s;
+  }
+
+  .menu-bar .menu-item::after {
+    content: " ";
+    height: 2px;
+    width: 0;
+    display: block;
+    background-color: #396df2;
+    transition: width 0.3s;
+  }
+
+  .menu-bar .menu-item:hover::after {
+    width: 50px;
   }
 
   .social-title {
@@ -534,6 +548,14 @@ button:hover {
 
   .social-icons {
     width: 70%;
+  }
+
+  .social-icons img {
+    transition: all 0.3s;
+  }
+
+  .social-icons img:hover {
+    transform: scale(1.3);
   }
 
   .works,

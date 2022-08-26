@@ -35,9 +35,20 @@ header {
   font-style: normal;
   color: #6070ff;
 }
+@keyframes animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  
 
 .logo-placeholder {
   padding-top: 12px;
+  animation-name: animation ; 
+  animation-duration: 2s;
 }
 
 .nav-links {

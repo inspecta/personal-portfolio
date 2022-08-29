@@ -8,6 +8,10 @@
   background: #f7f3f3;
 }
 
+body {
+  margin: 0;
+}
+
 header {
   display: flex;
   padding: 40px 20px;
@@ -446,6 +450,8 @@ textarea:focus {
   width: 150px;
   color: #6070ff;
   border-radius: 8px;
+  outline: none;
+  border: 0;
 }
 
 button:hover {

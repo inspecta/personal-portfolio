@@ -39,10 +39,12 @@ header {
   font-style: normal;
   color: #6070ff;
 }
+
 @keyframes animation {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -795,6 +797,10 @@ button:hover {
     transition: all 0.2s;
   }
 
+  .social-icons img {
+    transition: all 0.3s;
+  }
+
   .prog-lang img:hover {
     transform: scale(1.2);
   }
@@ -818,10 +824,6 @@ button:hover {
 
   .social-icons {
     width: 70%;
-  }
-
-  .social-icons img {
-    transition: all 0.3s;
   }
 
   .social-icons img:hover {

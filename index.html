@@ -14,6 +14,19 @@
   <body>
     <div class="container">
       <section class="home">
+        <div class="overlay" id="menu-overlay">
+          <img
+            src="./images/menu-close.png"
+            alt="Close out menu"
+            class="menu-close"
+            onclick="closeMenuList()"
+          />
+          <ul class="menu-overlay-list">
+            <li class="menu-item-list"><a href="#">Portfolio</a></li>
+            <li class="menu-item-list"><a href="#">About</a></li>
+            <li class="menu-item-list"><a href="#">Contact</a></li>
+          </ul>
+        </div>
         <header>
           <div class="logo-placeholder">
             <a href="#" class="logo">My Logo</a>
@@ -25,6 +38,8 @@
                   src="./images/menu.png"
                   alt="Menu button"
                   class="menu-button"
+                  id="hamburger"
+                  onclick="displayMenuList()"
                 />
               </li>
               <li class="menu-item"><a href="">Portfolio</a></li>
@@ -370,5 +385,19 @@
         </section>
       </div>
     </div>
+    <script>
+      const hamburger = document.querySelector(".menu-button");
+      const closeMenu = document.querySelector(".menu-close");
+
+      const displayMenuList = () => {
+        hamburger.style.display = "none"
+        document.getElementById("menu-overlay").style.display = "block"
+      };
+
+      const closeMenuList = () => {
+        document.getElementById("menu-overlay").style.display = "none"
+        hamburger.style.display = "block"
+      };
+    </script>
   </body>
 </html>

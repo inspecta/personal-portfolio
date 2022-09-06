@@ -19,7 +19,6 @@
             src="./images/menu-close.png"
             alt="Close out menu"
             class="menu-close"
-            onclick="closeMenuList()"
           />
           <ul class="menu-overlay-list">
             <li class="menu-item-list"><a href="#portfolio">Portfolio</a></li>
@@ -39,7 +38,6 @@
                   alt="Menu button"
                   class="menu-button"
                   id="hamburger"
-                  onclick="displayMenuList()"
                 />
               </li>
               <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
@@ -385,24 +383,6 @@
         </section>
       </div>
     </div>
-    <script>
-      const hamburger = document.querySelector(".menu-button");
-      const closeMenu = document.querySelector(".menu-close");
-
-      const displayMenuList = () => {
-        hamburger.style.display = "none"
-        document.getElementById("menu-overlay").style.display = "block"
-      };
-
-      const closeMenuList = () => {
-        document.getElementById("menu-overlay").style.display = "none"
-        hamburger.style.display = "block"
-      };
-
-      document.querySelectorAll('.menu-item-list').forEach((n) => n.addEventListener('click', () => {
-       document.getElementById("menu-overlay").style.display = "none";
-       hamburger.style.display = "block"
-      }))
-    </script>
+    <script src="./main.js"></script>
   </body>
 </html>

@@ -40,28 +40,26 @@ header {
   color: #6070ff;
 }
 
-.menu-overlay-list {
+.menu-close-btn li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.menu-close-btn {
   display: flex;
   flex-direction: column;
   gap: 30px;
   list-style: none;
-  margin-top: 20%;
 }
 
-.menu-overlay-list li a {
-  text-decoration: none;
-  color: white;
-  font-size: 35px;
-  font-weight: 500;
-}
-
-.menu-overlay-list li a:hover {
+.menu-close-btn li a:hover {
   box-shadow: 0 3px 0 white;
 }
 
 .menu-close {
-  margin: 3em 1em;
-  float: right;
+  cursor: pointer;
 }
 
 @keyframes animation {
@@ -95,13 +93,39 @@ header {
 }
 
 .overlay {
+  position: absolute;
+  width: 100vw;
+  display: none;
+}
+
+.mobile-menu {
   display: none;
   position: absolute;
-  background-color: blue;
-  height: 100vh;
+  background: #6070ff;
+  height: 120%;
   width: 100%;
   border-radius: 15px;
-  opacity: 0.91;
+  opacity: 1;
+  backdrop-filter: blur(7px);
+  mix-blend-mode: multiply;
+}
+
+.menu-close-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.close-menu-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2em 2em;
+}
+
+.hamburger-button {
+  cursor: pointer;
 }
 
 .title {
@@ -512,8 +536,8 @@ button:hover {
   }
 
   .home {
-    width: auto;
-    height: 916px;
+    width: 100%;
+    height: auto;
     padding: 0;
     margin: 0 auto;
     border-bottom-left-radius: 100px;
@@ -558,7 +582,11 @@ button:hover {
     margin-right: 5rem;
   }
 
-  .menu-bar .menu-button {
+  .overlay {
+    display: none;
+  }
+
+  .nav-links .menu-bar img {
     display: none;
   }
 
@@ -591,7 +619,7 @@ button:hover {
     width: 60px;
   }
 
-  .overlay {
+  .hamburger-button {
     display: none;
   }
 

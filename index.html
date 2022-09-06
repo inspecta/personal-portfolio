@@ -22,9 +22,9 @@
             onclick="closeMenuList()"
           />
           <ul class="menu-overlay-list">
-            <li class="menu-item-list"><a href="#">Portfolio</a></li>
-            <li class="menu-item-list"><a href="#">About</a></li>
-            <li class="menu-item-list"><a href="#">Contact</a></li>
+            <li class="menu-item-list"><a href="#portfolio">Portfolio</a></li>
+            <li class="menu-item-list"><a href="#about">About</a></li>
+            <li class="menu-item-list"><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <header>
@@ -42,9 +42,9 @@
                   onclick="displayMenuList()"
                 />
               </li>
-              <li class="menu-item"><a href="">Portfolio</a></li>
-              <li class="menu-item"><a href="">About</a></li>
-              <li class="menu-item"><a href="">Contact</a></li>
+              <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+              <li class="menu-item"><a href="#about">About</a></li>
+              <li class="menu-item"><a href="#contact">Contact</a></li>
             </ul>
           </nav>
         </header>
@@ -79,7 +79,7 @@
         </div>
       </section>
 
-      <section class="works">
+      <section class="works" id="portfolio">
         <div class="card">
           <div class="card-bg card1"></div>
           <div class="card-projects">
@@ -254,7 +254,7 @@
         </div>
       </section>
       <div class="about-contact">
-        <section class="about-myself">
+        <section class="about-myself" id="about">
           <div class="about-container">
             <div class="one">
               <h3 class="about-myself-title">About Myself</h3>
@@ -341,7 +341,7 @@
           </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
           <h1 class="title-contact">Contact me</h1>
           <p class="contact-info">
             If you have an application you are interested in developing, a
@@ -398,6 +398,11 @@
         document.getElementById("menu-overlay").style.display = "none"
         hamburger.style.display = "block"
       };
+
+      document.querySelectorAll('.menu-item-list').forEach((n) => n.addEventListener('click', () => {
+       document.getElementById("menu-overlay").style.display = "none";
+       hamburger.style.display = "block"
+      }))
     </script>
   </body>
 </html>

@@ -40,6 +40,33 @@ header {
   color: #6070ff;
 }
 
+.menu-overlay-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  list-style: none;
+  margin-top: 20%;
+}
+
+.menu-overlay-list li a {
+  color: white;
+  font-size: 32px;
+  font-weight: 500px;
+}
+
+.menu-overlay-list li a:hover {
+  box-shadow: 0 3px 0 white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu-close {
+  margin: 3em 1em;
+  float: right;
+}
+
 @keyframes animation {
   0% {
     transform: rotate(0deg);

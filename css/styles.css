@@ -110,14 +110,6 @@ header {
   mix-blend-mode: multiply;
 }
 
-.menu-close-btn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-  list-style: none;
-}
-
 .close-menu-btn {
   display: flex;
   justify-content: flex-end;
@@ -583,10 +575,6 @@ button:hover {
   }
 
   .overlay {
-    display: none;
-  }
-
-  .nav-links .menu-bar img {
     display: none;
   }
 

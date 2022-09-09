@@ -651,6 +651,21 @@ button:hover {
   width: 15px;
 }
 
+small {
+  color: rgb(255, 0, 0);
+  background: #fff;
+  line-height: 20px;
+  width: 25%;
+  padding: 0 1em;
+  margin: 0 auto 10px;
+  border-radius: 0.5em;
+  background-color: #fadddb;
+}
+
+input:focus:invalid {
+  box-shadow: none;
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     height: 100%;

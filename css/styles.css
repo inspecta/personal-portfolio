@@ -93,20 +93,20 @@ header {
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   display: none;
 }
 
 .mobile-menu {
   display: none;
-  position: absolute;
+  position: fixed;
   background: #6070ff;
   height: 120%;
   width: 100%;
   border-radius: 15px;
   opacity: 1;
-  backdrop-filter: blur(7px);
+  backdrop-filter: blur(10px);
   mix-blend-mode: multiply;
 }
 

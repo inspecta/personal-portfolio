@@ -9,8 +9,8 @@ const data = [
     persona: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     languages: ['html', 'css', 'javascript'],
     bgImage: 'card1',
-    live: ' ',
-    source: ' ',
+    live: 'https://inspecta.github.io/personal-portfolio/',
+    source: 'https://github.com/inspecta/personal-portfolio',
   },
   {
     id: 2,
@@ -21,8 +21,8 @@ const data = [
     persona: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     languages: ['html', 'css', 'javascript'],
     bgImage: 'card2',
-    live: ' ',
-    source: ' ',
+    live: 'https://inspecta.github.io/personal-portfolio/',
+    source: 'https://github.com/inspecta/personal-portfolio',
   },
   {
     id: 3,
@@ -33,8 +33,8 @@ const data = [
     persona: 'Exploring the future of media in Facebook"s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     languages: ['html', 'css', 'javascript'],
     bgImage: 'card3',
-    live: ' ',
-    source: ' ',
+    live: 'https://inspecta.github.io/personal-portfolio/',
+    source: 'https://github.com/inspecta/personal-portfolio',
   },
   {
     id: 4,
@@ -45,8 +45,8 @@ const data = [
     persona: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car',
     languages: ['html', 'css', 'javascript'],
     bgImage: 'card4',
-    live: ' ',
-    source: ' ',
+    live: 'https://inspecta.github.io/personal-portfolio/',
+    source: 'https://github.com/inspecta/personal-portfolio',
   },
 ];
 
@@ -118,6 +118,24 @@ data.forEach((i) => {
   html.appendChild(document.createTextNode(i.languages[0]));
   css.appendChild(document.createTextNode(i.languages[1]));
   js.appendChild(document.createTextNode(i.languages[2]));
+
+  if (i.languages[3] != null && i.languages[4] != null && i.languages[5] != null) {
+    github = document.createElement('li');
+    ruby = document.createElement('li');
+    bootstrap = document.createElement('li');
+
+    languages.appendChild(github);
+    languages.appendChild(ruby);
+    languages.appendChild(bootstrap);
+
+    github.appendChild(document.createTextNode(i.languages[3]));
+    ruby.appendChild(document.createTextNode(i.languages[4]));
+    bootstrap.appendChild(document.createTextNode(i.languages[5]));
+
+    github.classList.add('card-lang1');
+    ruby.classList.add('card-lang1');
+    bootstrap.classList.add('card-lang3');
+  }
 
   html.classList.add('card-lang1');
   css.classList.add('card-lang2');
@@ -243,6 +261,11 @@ for (let j = 1; j <= dataSize; j++) {
     liveButton.type = 'button';
     liveSource.appendChild(liveButton);
     liveButton.appendChild(document.createTextNode('See Live'));
+
+    const liveIcon = document.createElement('img');
+    liveIcon.setAttribute('class', 'liveImg');
+    liveIcon.src = './images/live.svg';
+    liveButton.appendChild(liveIcon);
 
     document.querySelectorAll('.live').forEach((live) => {
       live.addEventListener('click', () => {

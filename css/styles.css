@@ -991,8 +991,7 @@ button:hover {
   .prog-lang img:hover {
     transform: scale(1.2);
   }
-  
-  
+
   .popup-languages li {
     color: #6070ff;
     background: #ebebff;
@@ -1088,7 +1087,7 @@ button:hover {
     padding: 0;
     float: right;
   }
-  
+
   .line {
     color: grey;
     opacity: 0;

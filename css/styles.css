@@ -568,8 +568,8 @@ button:hover {
 }
 
 .popup-info {
-  font-size: 11px;
-  line-height: 18px;
+  font-size: 19px;
+  line-height: 26px;
   color: #344563;
 }
 
@@ -641,6 +641,14 @@ button:hover {
 .live-img,
 .github-img {
   margin-top: 5px;
+}
+
+.liveImg {
+  width: 17px;
+}
+
+.sourceImg {
+  width: 15px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1122,5 +1130,13 @@ button:hover {
     align-items: center;
     height: 40px;
     color: #172b4d;
+  }
+
+  .liveImg {
+    width: 18px;
+  }
+
+  .sourceImg {
+    width: 15px;
   }
 }

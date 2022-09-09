@@ -183,34 +183,33 @@
           <form
             action="https://formspree.io/f/mdojkaer"
             method="POST"
-            class="contact-form"
+            class="contact-form" id="form"
           >
             <input
               type="text"
               name="name"
               id="name"
-              maxlength="30"
-              minlength="5"
-              required
               placeholder="Please enter your name"
             />
+            <small id="errorName"></small>
             <input
-              type="email"
+              type="text"
               name="email"
               id="email"
-              required
               placeholder="Please enter your email."
             />
+            <small id="errorEmail"></small>
             <textarea
               name="message"
               id="message"
-              required
               cols="30"
               rows="7"
               placeholder="Write your message here"
-              maxlength="500"
             ></textarea>
-            <button class="contact-button" onclick="" type="submit">
+            <small id="errorMsg"></small><br>
+            <small id="overralError"></small>
+
+            <button class="contact-button" type="submit">
               Get in Touch
             </button>
           </form>
@@ -221,6 +220,6 @@
 
     </div>
     <script src="./main.js" defer></script>
-    </script>
+    <script src="./validate.js" defer></script>
   </body>
 </html>

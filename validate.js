@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 const form = document.getElementById('form');
 const fname = document.getElementById('name');
 const email = document.getElementById('email');
@@ -9,8 +8,7 @@ const errorMsg = document.getElementById('errorMsg');
 
 const overralError = document.getElementById('overralError');
 
-const emailRegex =
-  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 fname.addEventListener('input', () => {
   if (fname.value.length < 30) {
@@ -45,7 +43,6 @@ message.addEventListener('input', () => {
 });
 
 form.addEventListener('submit', (event) => {
-  // eslint-disable-next-line linebreak-style
   event.preventDefault();
 
   if (fname.value === '' && email.value === '' && message.value === '') {

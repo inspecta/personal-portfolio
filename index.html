@@ -10,8 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div class="container" id="container">
@@ -180,11 +182,7 @@
             feature that you need built or a project that needs coding. I’d love
             to help with it
           </p>
-          <form
-            action="https://formspree.io/f/mdojkaer"
-            method="POST"
-            class="contact-form" id="form"
-          >
+          <form action="#" method="POST" class="contact-form" id="form">
             <input
               type="text"
               name="name"
@@ -206,10 +204,10 @@
               rows="7"
               placeholder="Write your message here"
             ></textarea>
-            <small id="errorMsg"></small><br>
+            <small id="errorMsg"></small><br />
             <small id="overralError"></small>
 
-            <button class="contact-button" type="submit">
+            <button class="contact-button" type="submit" id="submit">
               Get in Touch
             </button>
           </form>
@@ -217,9 +215,9 @@
       </div>
       <!-- Popup -->
       <div class="popup-overlay" id="popupOverlay"></div>
-
     </div>
     <script src="./main.js" defer></script>
     <script src="./validate.js" defer></script>
+    <script src="./storage.js" defer></script>
   </body>
 </html>

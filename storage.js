@@ -15,3 +15,17 @@ const intoLocalStorage = () => {
   localStorage.setItem('a', intoString);
 }
 
+const setInputValues = (id, value) => {
+  const selectInput = document.getElementById(id);
+  selectInput.value = value;
+}
+
+const getJson = localStorage.getItem('a');
+const parseJson = JSON.parse(getJson);
+Object.keys(parseJson).forEach((key) => {
+  setInputValues(formStorage.elements[key].name, parseJson[key]);
+});
+
+nameStorage.onchange = nameStorage;
+emailStorage.onchange = nameStorage;
+messageStorage.onchange = nameStorage;

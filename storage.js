@@ -3,7 +3,7 @@ const nameStorage = document.getElementById('name');
 const emailStorage = document.getElementById('email');
 const messageStorage = document.getElementById('message');
 
-const intoLocalStorage = () => {
+const intoLocalStorage = (nameStorage, emailStorage, messageStorage) => {
   const formObject = {
     name: nameStorage.value,
     email: emailStorage.value,
@@ -26,6 +26,6 @@ Object.keys(parseJson).forEach((key) => {
   setInputValues(formStorage.elements[key].name, parseJson[key]);
 });
 
-nameStorage.onchange = intoLocalStorage;
-emailStorage.onchange = intoLocalStorage;
-messageStorage.onchange = intoLocalStorage;
+formStorage.addEventListener('change', () => {
+  intoLocalStorage(nameStorage, emailStorage, messageStorage);
+});

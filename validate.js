@@ -7,6 +7,8 @@ const errorName = document.getElementById('errorName');
 const errorEmail = document.getElementById('errorEmail');
 const errorMsg = document.getElementById('errorMsg');
 
+const overralError = document.getElementById('overralError');
+
 const emailRegex =
   /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -40,4 +42,26 @@ message.addEventListener('input', () => {
   if (message.value.length > 400) {
     errorMsg.textContent = 'Message should not exceed 400 characters.';
   }
+});
+
+form.addEventListener('submit', (event) => {
+  // eslint-disable-next-line linebreak-style
+  event.preventDefault();
+
+  if (fname.value === '' && email.value === '' && message.value === '') {
+    overralError.textContent = 'Fill in entire form before submitting.';
+  } else {
+    overralError.textContent = '';
+  }
+
+  if (
+    fname.value.length > 3
+    && fname.value.length < 30
+    && message.value.length > 10
+    && message.value < 400
+    && emailRegex.test(email.value)
+  ) {
+    form.submit();
+  }
+  return false;
 });
